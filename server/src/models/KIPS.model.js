@@ -11,12 +11,12 @@ const dailyData = new mongoose.Schema(
         revenue: {
             type: mongoose.Types.Currency,
             currency: 'USD',
-            get: (v) => v / 100
+            get: (v) => v / 1000
         },
         expenses: {
             type: mongoose.Types.Currency,
             currency: 'USD',
-            get: (v) => v / 100
+            get: (v) => v / 1000
         }
     }
 )
@@ -29,22 +29,22 @@ const monthlyData = new mongoose.Schema(
         revenue: {
             type: mongoose.Types.Currency,
             currency: 'USD',
-            get: (v) => v / 100
+            get: (v) => v / 1000
         },
         expenses: {
             type: mongoose.Types.Currency,
             currency: 'USD',
-            get: (v) => v / 100
+            get: (v) => v / 1000
         },
         operationalExpenses: {
             type: mongoose.Types.Currency,
             currency: 'USD',
-            get: (v) => v / 100
+            get: (v) => v / 1000
         },
         nonOperationalExpenses: {
             type: mongoose.Types.Currency,
             currency: 'USD',
-            get: (v) => v / 100
+            get: (v) => v / 1000
         }
     }
 )
@@ -54,24 +54,24 @@ const KIPSSchema = new mongoose.Schema(
         totalProfit: {
             type: mongoose.Types.Currency,
             currency: 'USD',
-            get: (v) => v / 100
+            get: (v) => v / 1000
         },
         totalRevenue: {
             type: mongoose.Types.Currency,
             currency: 'USD',
-            get: (v) => v / 100
+            get: (v) => v / 1000
         },
         totalExpenses:{
             type: mongoose.Types.Currency,
             currency: 'USD',
-            get: (v) => v / 100
+            get: (v) => v / 1000
         },
         expensesByCategory: {
             type: Map,
             of: {
                 type: mongoose.Types.Currency,
                 currency: 'USD',
-                get: (v) => v / 100
+                get: (v) => v / 1000
             }
         }, 
         monthlyData: [monthlyData],
