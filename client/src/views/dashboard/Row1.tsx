@@ -189,7 +189,7 @@ const Row1 = () => {
           subtitle="Represents the profit and revenue of the company"
           sideText="+4%"
         />
-        <ResponsiveContainer width={"100%"} height={"auto%"}>
+        <ResponsiveContainer width={"100%"} height={"80%"}>
           <BarChart
             width={350}
             height={200}
